@@ -11,13 +11,13 @@ loop do
 
     if command == 1
         print "チャージ金額を入力して下さい："
-        amout = gets.to_i
-        wallet.charge(amout)
+        amount = gets.to_i
+        wallet.charge(amount)
         puts "チャージが完了しました。(チャージ後残高：#{wallet.balance})"
     elsif command == 2
         print "消費金額を入力して下さい："
-        amout = gets.to_i
-        wallet.spend(amout)
+        amount = gets.to_i
+        wallet.spend(amount)
         puts "消費が完了しました。(消費後残高：#{wallet.balance})"
     else
         puts "入力が正しくありません。"
